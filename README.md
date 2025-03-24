@@ -7,4 +7,4 @@
    - Formatted the `creation_date` using the `formattedDate` function.
 3. Structured the extracted data into a readable sentence.
 4. Appended the formatted results to the results paragraph.
-5. Ensured each entry appeared on a new line for better readability.
+5. Ensured each entry is displayed on a separate line by using <br> for proper HTML formatting.
