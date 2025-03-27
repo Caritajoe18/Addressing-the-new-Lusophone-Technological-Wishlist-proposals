@@ -1,6 +1,6 @@
 ## Running the Python Script
 
-1. Clone the repository and navigate into it:
+1. Clone the repository in any fol and navigate into it:
    ```sh
    git clone https://github.com/Caritajoe18/Addressing-the-new-Lusophone-Technological-Wishlist-proposals.git
    ```
