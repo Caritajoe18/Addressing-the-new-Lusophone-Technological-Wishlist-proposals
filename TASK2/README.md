@@ -1,3 +1,21 @@
+## Running the Python Script
+
+1. Clone the repository and navigate into it:
+   ```sh
+   git clone https://github.com/Caritajoe18/Addressing-the-new-Lusophone-Technological-Wishlist-proposals.git
+   ```
+   ```sh
+   cd Addressing-the-new-Lusophone-Technological-Wishlist-proposals
+   ```
+2. From the repository folder,navigate into the Python script folder:
+   ```sh
+   cd TASK2
+   ```
+3. Run the script:
+   ```sh
+   python3 intern.py
+   ```
+
 # Steps Taken
 
 ## 1. Extracting URLs
@@ -11,4 +29,5 @@
 
 ## 4. Printing Results
 - Displayed the status code with each URL for quick analysis.
+
 
