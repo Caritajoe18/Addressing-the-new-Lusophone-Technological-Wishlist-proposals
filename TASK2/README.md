@@ -15,11 +15,6 @@
    ```sh
    python3 intern.py
    ```
-
-Here’s the step-by-step approach in the requested format:
-
----
-
 # Steps Taken
 
 1. Used `re.compile()` to create a regex pattern that identifies HTTP and HTTPS URLs in the CSV file.
