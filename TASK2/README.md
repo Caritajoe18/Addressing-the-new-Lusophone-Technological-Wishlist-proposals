@@ -16,20 +16,25 @@
    python3 intern.py
    ```
 
+Here’s the step-by-step approach in the requested format:
+
+---
+
 # Steps Taken
 
-## 1. Extracting URLs
+1. Used `re.compile()` to create a regex pattern that identifies HTTP and HTTPS URLs in the CSV file.
 
-- Used a regex pattern to extract HTTP and HTTPS URLs from the CSV file.
+2. Created a function `url_response(url)` to send an HTTP `HEAD` request to each URL.
 
-## 2. Checking URL Status
+- Printed the status code if the request was successful.
+- Handled exceptions by printing "(Not found)" for unreachable URLs.
 
-- Sent an HTTP HEAD request to each URL and printed the status code or an error message.
+3. Opened the csv file with UTF-8 encoding.
 
-## 3. Processing URLs Concurrently
+- Read each row and applied the regex pattern to extract URLs from the first column.
 
-- Used a thread pool executor to process multiple URLs in parallel for efficiency.
+4. Used `ThreadPoolExecutor` to handle multiple URL requests in parallel.
 
-## 4. Printing Results
+- Applied `executor.map()` to execute the `url_response()` function on all extracted URLs.
 
-- Displayed the status code with each URL for quick analysis.
+5. Printed each URL along with its corresponding status code.
