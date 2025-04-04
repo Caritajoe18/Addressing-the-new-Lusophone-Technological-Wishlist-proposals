@@ -95,9 +95,7 @@
       // Processing the data and returning the results in the given format
       let formattedResults = data.map(
         ({ title, page_id, creation_date }, index) =>
-          `${String.fromCharCode(
-            65 + index
-          )}. Article "${title}" (Page ID ${page_id}) was created on ${formattedDate(
+          `Article "${title}" (Page ID ${page_id}) was created on ${formattedDate(
             creation_date
           )}.`
       );

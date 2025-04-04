@@ -1,8 +1,5 @@
-import requests, csv, re
+import requests, csv
 from concurrent.futures import ThreadPoolExecutor
-
-# Define regex pattern for extracting URLs
-url_pattern = re.compile(r'https?://[^\s]+')
 
 def url_response(url):
     """Send a HEAD request and print the status code."""
@@ -11,9 +8,11 @@ def url_response(url):
     except requests.RequestException:
         print(f"(Not found) {url}")
 
-# Extract URLs using regex from CSV file
+# Extract URLs from CSV file
 with open("Task 2 - Intern.csv", encoding='utf-8') as f:
-    urls = [match for row in csv.reader(f) for match in url_pattern.findall(row[0])]  
+    reader = csv.reader(f)
+    next(reader)  # to skip the header 
+    urls = [row[0] for row in reader if row]
 
 # Process URLs concurrently
 with ThreadPoolExecutor() as executor:
