@@ -8,7 +8,7 @@ def url_response(url):
     except requests.RequestException:
         print(f"(Not found) {url}")
 
-# Extract URLs using regex from CSV file
+# Extract URLs from CSV file
 with open("Task 2 - Intern.csv", encoding='utf-8') as f:
     reader = csv.reader(f)
     next(reader)  # to skip the header 
